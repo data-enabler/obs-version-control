@@ -10,8 +10,8 @@ type NUL > ..\OBS-Studio\portable_mode.txt
 
 cd ..
 REM Make symlink in OBS executable directory for cleaner resource paths
-mklink /J ".\OBS-Studio\bin\64bit\root" %cd%
+mklink /J ".\OBS-Studio\bin\64bit\root" "%cd%"
 
 REM Make symlink for config folder
 mkdir ".\OBS-Studio\config\obs-studio"
-mklink /J ".\OBS-Studio\config\obs-studio\basic" %cd%\OBS-Settings
+mklink /J ".\OBS-Studio\config\obs-studio\basic" "%cd%\OBS-Settings"
